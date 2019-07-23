@@ -1,0 +1,31 @@
+GET https: //ga.support.sap.com/dtp/viewer/services/backend.xsjs?cmd=checkSessionInfo
+POST https: //ga.support.sap.com/dtp/viewer/services/backend.xsjs?cmd=search   {
+    "searchTerms": "",
+    "filters": []
+} 
+{
+    "searchResult": [
+        {
+            "SCORE": "1",
+            "ID": "1763",
+            "NAME": "How to create the perfect Fiori incident ",
+            "DESCRIPTION": "What you need to put on your SAP Incident to speed Fiori issue resolution",
+            "ACTION_ID": "22774",
+            "TARGET": "E",
+            "COMPONENT": "CA-FLP-FE-COR",
+            "PRODUCT": "SAP Fiori for SAP S/4HANA"
+        }
+    ],
+    "resultCount": 750,
+    "status": null
+}
+
+POST https: //ga.support.sap.com/dtp/viewer/services/backend.xsjs?cmd=getActionChain {
+    "actionList": "22774",
+    "sessionInfo": {
+        "uid": "E963CD2AF2E1654CA86E3B9D44D31A41",
+        "username": "sAnonymous",
+        "sessionId": "sAnonymous:E963CD2AF2E1654CA86E3B9D44D31A41"
+    },
+    "version": null
+}

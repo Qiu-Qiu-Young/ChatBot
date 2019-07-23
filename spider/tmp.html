@@ -1,0 +1,15 @@
+<p>New checks were introduced by SAP Note <a href=\"https://launchpad.support.sap.com/#/notes/2006072/E\"
+        target=\"_blank\">2006072</a>&nbsp;(or corresponding Support package of EA-PS). Because of this, it is necessary
+    to analyze the FM update profile details in combination with your settings for Closing Operations (CCF) in Funds
+    Management.</p>\n<p>For this procedure, you can start report <strong>RFFMMONI</strong> from transaction code SE38 to
+    verify which kind of profile are you using:</p>\n<ul>\n<li>Period-Based Encumbrance Tracking
+        (<strong>PBET</strong>). &nbsp;</li>\n<li>Annual/Fiscal Year-Based Encumbrance Tracking
+        (<strong>ABET</strong>/<strong>YBET</strong>).</li>\n</ul>\n<p>&nbsp;</p>
+
+<p>Below, you can find an output example of report RFFMMONI:</p>\n<p><img
+        src=\"services/backend.xsjs?cmd=viewImage&amp;id=2650\" /></p>\n<p>In addition to that, you will need to verify
+    your settings for Commitment Carryforward (CCF)&nbsp;in the IMG&nbsp;activities for Closing operations, to determine
+    if Carryforward (CCF)&nbsp;of Value type 54 is allowed: <br />Public Sector Management -&gt; Funds Management
+    Government -&gt; Closing Operations<br />Enter Default Settings<br />and<br />Commitment Closing Operations -&gt;
+    Enter Settings for Commitment Carryforward Payment Budget<br /><br /></p>\n<p>By knowing those settings, combined
+    with your FM update profile information, you can identify one of the 4 possible solutions.</p>
